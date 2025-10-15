@@ -21,5 +21,5 @@ coverage:
   temporal:
     - year: "2001"
       month: "7"
-      display_date: "July, 2001"
+      display_date: "julho de 2001"
 ---

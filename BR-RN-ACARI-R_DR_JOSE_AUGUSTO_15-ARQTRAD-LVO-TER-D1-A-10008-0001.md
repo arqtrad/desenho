@@ -12,5 +12,17 @@ subject:
   role: "A"
   state: "O"
   projection: "1"
-  lod
+  lod: "100"
+  loe: "8"
+relation:
+  documents:
+    - relids: "br-rn-acari-r_dr_jose_augusto_15"
+      zone: "TER"
+  source:
+    - relids: "feijo:2002arquitetura"
+coverage:
+  temporal:
+    - year: "2001"
+      month: "7"
+      display_date: "julho de 2001"
 ---
