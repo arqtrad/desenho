@@ -1,0 +1,44 @@
+########################################################################
+#                       CIDOC-CRM: E31 Document                        #
+########################################################################
+title : "" # Título convencional (CIDOC-CRM: E35 Title)
+id    : "" # Filename (CIDOC-CRM: P48 has preferred identifier => E42 Identifier)
+author: "" # Autoria do nosso desenho vetorial (CIDOC-CRM: P94i was created by => E21 Person => P1 is identified by => E42 identifier)
+date  : # Data de emissão do nosso desenho vetorial, aaaa-mm-dd (CIDOC-CRM: E65 Creation => E61 Time Primitive)
+excerpt: # (CIDOC-CRM: P3 has note => E62 String)
+format: # (CIDOC-CRM: P2 has type => E55 Type = DCMI: dc.format)
+  medium: # Uncomment all applicable lines
+    # - type: "dxf"
+    # - type: "image/svg+xml"
+    # - type: "ifc"
+    # - type: "application/pdf"
+subject: # VRA Core / este campo identifica as características do desenho, não do objeto representado.
+  fase : # (códigos ABNT NBR 13.532)
+  form : # "D"esenho, dia"G"rama, "M"odelo, etc.
+  role : # "A"rquitetura, "U"rbanismo, ar"X"eologia etc.
+  state: # "E"xistente, "O"riginal, etc. 
+  projection: # 0-9 (ISO 13567)
+  lod  : # 100, 200, 300, etc.
+  loe  : # 0-10 (Level of archaeological evidence as per Aparicio & Figueiredo)
+  function: # (ISO 13567 and user-defined function / classification codes)
+  scale: # Só o denominador: 100, 200, etc. / Obrigatório em arquivos SVG ou PDF.
+relation: # Using mappings for the relation types because there is a finite number of them, makes it easier to reference on the website.
+  documents: # (CIDOC-CRM: P70 documents) # Um item de lista para cada objeto referenciado.
+    - relids   : # (CIDOC-CRM: P168i place is defined by? => E22 Human-made Object)
+      # zone   : # BOT: "site", "building" or building code, zone code, storey code, or space code
+      # element: # BOT element code(s)
+      # text   : # (CIDOC-CRM: P3 has note => E62 String) Se for relevante especificar algo sobre como o objeto está representado neste desenho.
+  source: # (CIDOC-CRM: E13 Attribute Assignment) # Um item de lista para cada fonte usada na produção deste desenho.
+    - relids: # _data/biblio.yaml => CSL citekey (CIDOC-CRM: P1 is identified by => E42 identifier)
+      text  : # (CIDOC-CRM: P3 has note => E62 String) Se for relevante, especificar o que esta fonte traz como informação específica para a reconstituição ou produção do desenho. Se a fonte não for uma referência citável (por exemplo, se for um levantamento original feito pela nossa equipe), descrever aqui.
+  isVersionOf: # (CIDOC-CRM: P31i was modified by => E11 Modification) # Registro de versões deste desenho.
+    - relids: # Numerar a revisão na forma: v1.0 onde o número à esquerda do ponto se refere a um redesenho completo e o número à direita se refere a correções pontuais no arquivo.
+      author: # (CIDOC-CRM: E21 Person => P1 is identified by => E42 identifier)
+      date  : # (CIDOC-CRM: E65 Creation => E61 Time Primitive)
+      text  : # (CIDOC-CRM: P3 has note => E62 String) # Breve descrição da alteração realizada.
+coverage:
+  spatial:
+    extent: # (CRMgeo: SP6 Declarative Place => E94 Space Primitive) # Limites geográficos do desenho.
+      polygon   : # (CRMgeo: SP5 Geometric Place Expression => WKT POLYGON) # Used to build UBID for this drawing.
+      projection: # (CRMgeo: SP4 Spatial Coordinate Reference System => CRS)
+  temporal: # Período(s) histórico(s) representado(s) no desenho, um item de lista para cada período distinto. Formatar segundo <https://timeline.knightlab.com/docs/json-format.html>
