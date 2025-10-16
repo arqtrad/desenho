@@ -64,7 +64,7 @@ type:
       vocab: "AAT"
       refid: "http://vocab.getty.edu/aat/300034393"
 layout: "layouts/obra.njk"
-tags: [ "desenho" ]
+tags: [ "w", "desenho" ]
 css:
   - "/assets/leaflet/leaflet.css"
   - "/assets/timelinejs/css/timeline.css"
