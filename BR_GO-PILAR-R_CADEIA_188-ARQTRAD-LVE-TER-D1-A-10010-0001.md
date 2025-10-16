@@ -1,6 +1,6 @@
 ---
 title: "Planta baixa"
-id: "BR_GO-PILAR-R_CADEIA_188-ARQTRAD-LVE-TER-D1-A-10010-0001-v1.0"
+id: "BR_GO-PILAR-R_CADEIA_188-ARQTRAD-LVE-TER-D1-A-10010-0001"
 author: "Eduarda Santana"
 date: 2024-02-11
 format:

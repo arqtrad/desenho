@@ -1,6 +1,6 @@
 ---
 title: "Planta de situação"
-id: "BR_GO-PILAR-CASA_PADRE_BRAZ-ARQTRAD-LVE-LOC-D1-A-20010-0001-v1.0"
+id: "BR_GO-PILAR-CASA_PADRE_BRAZ-ARQTRAD-LVE-LOC-D1-A-20010-0001"
 author: "Eduarda Santana"
 date: 2024-02-11
 subject:

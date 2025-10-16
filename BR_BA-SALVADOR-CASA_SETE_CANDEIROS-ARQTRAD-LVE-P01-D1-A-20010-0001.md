@@ -1,6 +1,6 @@
 ---
 title: "Planta do pavimento superior"
-id: "BR_BA-SALVADOR-CASA_SETE_CANDEIROS-ARQTRAD-LVE-P01-D1-A-20010-0001-v1.0"
+id: "BR_BA-SALVADOR-CASA_SETE_CANDEIROS-ARQTRAD-LVE-P01-D1-A-20010-0001"
 author: "Eduarda Santana"
 date: 2024-02-11
 format:
