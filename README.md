@@ -1,3 +1,4 @@
-# dwg-data
+# Desenho
 
-Arquivos dxf e svg dos desenhos técnicos dos Documentários de Arquitetura Tradicional.
+Metadados dos arquivos dxf e svg dos desenhos técnicos dos Documentários 
+de Arquitetura Tradicional.

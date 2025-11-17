@@ -1,22 +1,22 @@
 ########################################################################
 #                       CIDOC-CRM: E31 Document                        #
 ########################################################################
-# title : "" # Título convencional (CIDOC-CRM: E35 Title)
+title : "Desenho" # Título convencional conforme a tradição da engenharia militar portuguesa (CIDOC-CRM: E35 Title)
 # id    : "" # Filename (CIDOC-CRM: P48 has preferred identifier => E42 Identifier)
 # author: "" # Autoria do nosso desenho vetorial (CIDOC-CRM: P94i was created by => E21 Person => P1 is identified by => E42 identifier)
 # date  : # Data de emissão do nosso desenho vetorial, aaaa-mm-dd (CIDOC-CRM: E65 Creation => E61 Time Primitive)
-# excerpt: # (CIDOC-CRM: P3 has note => E62 String)
+# description: # (CIDOC-CRM: P3 has note => E62 String)
 # format: # (CIDOC-CRM: P2 has type => E55 Type = DCMI: dc.format)
   # medium: # Uncomment all applicable lines
     # - type: "dxf"
     # - type: "image/svg+xml"
     # - type: "ifc"
     # - type: "application/pdf"
-# subject: # VRA Core / este campo identifica as características do desenho, não do objeto representado.
-  # fase : # (códigos ABNT NBR 13.532)
+subject: # VRA Core / este campo identifica as características do desenho, não do objeto representado.
+  fase : "LV" # (códigos ABNT NBR 13.532)
   # form : # "D"esenho, dia"G"rama, "M"odelo, etc.
   # role : # "A"rquitetura, "U"rbanismo, ar"X"eologia etc.
-  # state: # "E"xistente, "O"riginal, etc. 
+  state: "E" # "E"xistente, "O"riginal, etc. 
   # projection: # 0-9 (ISO 13567)
   # lod  : # 100, 200, 300, etc.
   # loe  : # 0-10 (Level of archaeological evidence as per Aparicio & Figueiredo)
@@ -45,13 +45,9 @@
 ########################################################################
 # Os campos abaixo referem-se a informações de formatação da ficha.    #
 ########################################################################
-header:
-  teaser        : "https://placehold.co/600x400"
-  overlay_image : "https://i.pinimg.com/originals/f7/76/49/f7764902ee90d4fc48b6f795307bc366.jpg"
-  overlay_filter: 0.7
 ########################################################################
 # As linhas abaixo são usadas como padrão e não precisam ser copiadas  #
-# para a ficha de cada mídia.                                          #
+# para a ficha de cada desenho.                                        #
 ########################################################################
 conformsTo : "https://schema.org/Drawing"
 type:
@@ -63,9 +59,5 @@ type:
     - text : "Desenho como construído"
       vocab: "AAT"
       refid: "http://vocab.getty.edu/aat/300034393"
-layout: "layouts/obra.njk"
-tags: [ "w", "desenho" ]
-css:
-  - "/assets/leaflet/leaflet.css"
-  - "/assets/timelinejs/css/timeline.css"
-toc: false
+permalink: false # Impede que cada desenho gere uma página web.
+tags: [ "dwg", "desenho" ]

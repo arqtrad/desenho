@@ -1,11 +1,8 @@
 ---
-title: "Planta do pavimento superior"
-id: "BR_BA-SALVADOR-CASA_SETE_CANDEIROS-ARQTRAD-LVE-P01-D1-A-20010-0001"
+title: "Planta de situação"
+id: "BR_BA-SALVADOR-CASA_SETE_CANDEIROS-ARQTRAD-LVE-LOC-D1-A-20010-0001"
 author: "Eduarda Santana"
 date: 2024-02-11
-format:
-  medium:
-    - type: "dxf"
 subject:
   fase: "LV"
   form: "D"
@@ -17,9 +14,9 @@ subject:
 relation:
   documents:
     - relids: "br_ba-salvador-casa_sete_candeeiros"
-      zone: "P01"
+      zone: "Site"
   source:
-    - relids: "iphanCasasPatrimonio2010"
+    - relids: "@iphan:2010casas"
 coverage:
   temporal:
     - year: "1759"

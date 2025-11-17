@@ -19,7 +19,7 @@ relation:
     - relids: "br_ba-salvador-casa_sete_candeeiros"
       zone: "Building"
   source:
-    - relids: "iphanCasasPatrimonio2010"
+    - relids: "@iphan:2010casas"
 coverage:
   temporal:
     - year: "1759"
